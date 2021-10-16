@@ -115,7 +115,7 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.top__menu-block .logo__img {
+.top__menu-block .logo .logo__img {
   display: block;
   margin: 5px 0;
   max-height: 60px;

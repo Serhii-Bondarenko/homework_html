@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 //контент
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -117,12 +118,13 @@ a {
   justify-content: space-between;
   align-items: center;
 
-  .logo__img {
-    display: block;
-    margin: 5px 0;
-    max-height: 60px;
+  .logo {
+    .logo__img {
+      display: block;
+      margin: 5px 0;
+      max-height: 60px;
+    }
   }
-
   .nav__menu {
     display: flex;
 
