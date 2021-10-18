@@ -86,7 +86,7 @@ a {
 
 .wrapper {
   width: 100%;
-  max-width: 1215px;
+  max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -94,7 +94,7 @@ a {
 .text-style {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 16px;
   &:hover {
     color: #f66904;
     transition: 0.1s;
@@ -117,9 +117,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  column-gap: 5%;
   .logo {
-    flex: 0 0 20% ;
+    flex: 1 0 30% ;
     .logo__img {
       display: block;
       margin: 5px 0;
@@ -128,73 +128,30 @@ a {
   }
   .nav__menu {
     position: relative;
-    right: 15%;
+    right: 13%;
     display: flex;
-    flex: 0 1 33.3333%;
-    .select__list {
-      li:hover .sub__menu-borderWrap {
-        display: block;
-        transition: 0.1s;
-      }
-
-      .nav__bar {
-        position: relative;
-
-        &:hover:after {
-          content: ' ';
-          font-family: "Font Awesome 5 Free";
-          font-weight: 900;
-          content: '\f0de';
-          position: absolute;
-          bottom: 0.1%;
-          margin: 0 0 0 5px;
-          color: black;
-        }
-
-        &::after {
-          content: ' ';
-          font-family: "Font Awesome 5 Free";
-          font-weight: 900;
-          content: '\f0dd';
-          position: absolute;
-          bottom: 25%;
-          margin: 0 0 0 5px;
-          color: black;
-        }
-      }
-    }
-
-    .select__list {
-      li {
-        position: relative;
-      }
-    }
-
+    flex: 2 0 33.3333%;
+    column-gap: 6%;
     .menu__item {
       text-align: center;
-      flex: 0 0 33.3333%;
-
+      flex: 0 0 15%;
     }
+    .select__list {
+      position: relative;
+      .sub__menu-list {
+        position: absolute;
+        padding: 2em 0 0 0;
 
-    .sub__menu-list {
-      position: absolute;
-      left: 15px;
-      padding: 20% 0 0 0;
-
-      li {
-
-      }
-
-      .sub__menu-item {
-        font-weight: 400;
-        font-size: 15px;
-        &:hover {
-          color: #00a4ff;
-          transition: 0.1s;
-          font-weight: bold;
+        .sub__menu-item {
+          font-weight: 400;
+          font-size: 15px;
+          &:hover {
+            color: #00a4ff;
+            transition: 0.1s;
+            font-weight: bold;
+          }
         }
       }
-
       .sub__menu-borderWrap {
         display: none;
         padding: 10px;
@@ -207,24 +164,53 @@ a {
           text-align: left;
         }
       }
+      li:hover .sub__menu-borderWrap {
+        display: block;
+        transition: 0.1s;
+      }
+
+      .nav__bar {
+        position: relative;
+        &:hover:after {
+          content: ' ';
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: '\f0de';
+          position: absolute;
+          bottom: 0.1%;
+          margin: 0 0 0 5px;
+          color: black;
+        }
+        &::after {
+          content: ' ';
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: '\f0dd';
+          position: absolute;
+          bottom: 25%;
+          margin: 0 0 0 5px;
+          color: black;
+        }
+      }
     }
   }
-}
+  .support {
+    display: flex;
+    align-items: center;
+    column-gap: 10%;
+    flex: 1 0 24%;
+    .support__element {
 
-.support {
-  display: flex;
-  align-items: center;
-  flex: 0 1 20%;
-  .support__element {
-    flex: 0 1 50%;
+      .phone__link {
+        flex: 1 0 50%;
+        margin: 0 20px 0 0;
+      }
 
-    .phone__link {
-      margin: 0 20px 0 0;
-    }
-
-    .e-mail {
-      font-weight: bold;
-      font-size: 16px;
+      .e-mail {
+        flex: 2 1 50%;
+        font-weight: 900;
+        font-size: 16px;
+      }
     }
   }
 }
