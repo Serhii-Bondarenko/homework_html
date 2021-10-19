@@ -1,0 +1,86 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+
+}
+//загальні стилі
+.text-style{
+  background-color: silver;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+//флекс контейнер
+.flex__container{
+  margin: 0 auto;
+  height: 1200px;
+  width: 1000px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  .flex__item{
+
+  }
+  //task 1
+  .f1{
+    flex: 0 1 100%;
+  }
+  .f2{
+    column-gap: 10px;
+    row-gap: 10px;
+    flex: 2 1 60%;
+    display: flex;
+    flex-wrap: wrap;
+    .main__item{
+      flex: 1 1 100%;
+    }
+    .inner-item{
+      flex: 1 1 20%
+    }
+  }
+  .f3{
+    flex: 0 1 20%;
+  }
+  //task 2
+  .f11{
+    flex: 0 1 100%;;
+  }
+  .block__wrap{
+    column-gap: 10px;
+    row-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 60%;
+    .inner-item{
+       flex: 1 1 30%;
+    }
+  }
+  .f33{
+    flex: 0 1 20% ;
+  }
+
+  //task 3
+  .f12, .f13, .f14{
+    display: flex;
+    flex: 1 1 100%;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  .f12{
+    .item{
+      flex: 1 1 50%;
+    }
+  }
+  .f13{
+    flex: 0 1 100%
+  }
+  .f14{
+    .item{
+      flex: 0 1 33.333%;
+    }
+  }
+}

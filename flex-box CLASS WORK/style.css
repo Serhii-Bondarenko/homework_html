@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.text-style {
+  background-color: silver;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex__container {
+  margin: 0 auto;
+  height: 1200px;
+  width: 1000px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.flex__container .f1 {
+  flex: 0 1 100%;
+}
+.flex__container .f2 {
+  column-gap: 10px;
+  row-gap: 10px;
+  flex: 2 1 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex__container .f2 .main__item {
+  flex: 1 1 100%;
+}
+.flex__container .f2 .inner-item {
+  flex: 1 1 20%;
+}
+.flex__container .f3 {
+  flex: 0 1 20%;
+}
+.flex__container .f11 {
+  flex: 0 1 100%;
+}
+.flex__container .block__wrap {
+  column-gap: 10px;
+  row-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 60%;
+}
+.flex__container .block__wrap .inner-item {
+  flex: 1 1 30%;
+}
+.flex__container .f33 {
+  flex: 0 1 20%;
+}
+.flex__container .f12, .flex__container .f13, .flex__container .f14 {
+  display: flex;
+  flex: 1 1 100%;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.flex__container .f12 .item {
+  flex: 1 1 50%;
+}
+.flex__container .f13 {
+  flex: 0 1 100%;
+}
+.flex__container .f14 .item {
+  flex: 0 1 33.333%;
+}
+
+/*# sourceMappingURL=style.css.map */
