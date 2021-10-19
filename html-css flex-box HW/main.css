@@ -1,0 +1,88 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+div {
+  text-transform: uppercase;
+  color: #eaeaea;
+}
+
+.flex__container {
+  height: 100vh;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.flex__container .flex__item {
+  border: #eaeaea solid 4px;
+  border-radius: 20px;
+  background-color: silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex__container .a1 {
+  flex: 1 1 100%;
+}
+.flex__container .b1 {
+  flex: 1 1 60%;
+}
+.flex__container .c1 {
+  flex: 1 0 20%;
+}
+.flex__container .header {
+  background-color: #00a4ff;
+  flex: 1 1 100%;
+}
+.flex__container .menu {
+  background-color: #f66904;
+  flex: 0 1 20%;
+}
+.flex__container .content {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 70%;
+}
+.flex__container .content .post {
+  background-color: tomato;
+  height: 50%;
+  flex: 1 1 100%;
+}
+.flex__container .footer {
+  background-color: aqua;
+  flex: 1 1 100%;
+}
+.flex__container .main__widget {
+  background-color: blue;
+  flex: 1 1 100%;
+}
+.flex__container .widgets__item {
+  background-color: #00a4ff;
+  flex: 1 1 30%;
+}
+.flex__container .contact {
+  background-color: blue;
+  flex: 1 1 100%;
+}
+.flex__container .header2, .flex__container .nav, .flex__container .footer2 {
+  height: 80px;
+  flex: 0 1 100%;
+}
+.flex__container .main2 {
+  background-color: darkblue;
+  flex: 1 1 50%;
+}
+.flex__container .aside {
+  background-color: #49B3FB;
+  flex: 0 1 30%;
+}
+.flex__container .aside, .flex__container .main2 {
+  height: 400px;
+}
+
+/*# sourceMappingURL=main.css.map */

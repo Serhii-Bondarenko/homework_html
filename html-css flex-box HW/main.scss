@@ -1,0 +1,109 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+// загальні характеристики
+div {
+  text-transform: uppercase;
+  color: #eaeaea;
+}
+
+.flex__container {
+  height: 100vh;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  .flex__item {
+    //height: 300px;
+    border: #eaeaea solid 4px;
+    border-radius: 20px;
+    background-color: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  //img 1
+  .a1 {
+    flex: 1 1 100%;
+  }
+
+  .b1 {
+    flex: 1 1 60%;
+  }
+
+  .c1 {
+    flex: 1 0 20%;
+  }
+
+
+  // Task img 2-1
+  .header {
+    background-color: #00a4ff;
+    flex: 1 1 100%;
+  }
+
+  .menu {
+    background-color: #f66904;
+    flex: 0 1 20%;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 70%;
+
+    .post {
+      background-color: tomato;
+      height: 50%;
+      flex: 1 1 100%;
+    }
+  }
+
+  .footer {
+    background-color: aqua;
+    flex: 1 1 100%;
+  }
+
+  // Task 2-2
+  .main__widget {
+    background-color: blue;
+    flex: 1 1 100%;
+  }
+
+  .widgets__item {
+    background-color: #00a4ff;
+    flex: 1 1 30%;
+  }
+
+  .contact {
+    background-color: blue;
+    flex: 1 1 100%;
+  }
+
+  // Task 2
+  .header2, .nav, .footer2{
+    height: 80px;
+    flex: 0 1 100%;
+  }
+  .main2{
+    background-color: darkblue;
+    flex: 1 1 50%;
+  }
+  .aside{
+    background-color: #49B3FB;
+    flex: 0 1 30%;
+  }
+  .aside, .main2{
+    height: 400px;
+  }
+
+}
+
+
