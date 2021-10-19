@@ -1,27 +1,30 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
   color: silver;
+  max-width: 1215px;
+  width: 100%;
 }
 
+//межі
 .border {
-  border: 4px solid black;
-  border-bottom: unset;
+  border: 3px solid black;
 }
 
+//загальний стиль тексту
 .inner__content-style {
+  text-align: center;
   padding: 10px;
   margin: 5px;
   background-color: #eaeaea;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
+//флекс контейнер з флекс елементами
 .flex__container {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
-  //height: 1000px;
 
   .flex__item {
     display: flex;
@@ -29,36 +32,49 @@ body {
     justify-content: center;
   }
 
+  //шапка
   .header {
-    height: 100px;
     background-color: silver;
     justify-content: space-between;
     flex: 0 1 100%;
 
     .header__inner {
-
+      width: 5%;
+    }
+    @media screen and (max-width: 600px) {
+      .header__inner{
+        width: 10%;
+      }
     }
   }
 
+  //лівий сайдбар
   .aside {
-    //height: 100%;
+    align-self: stretch;
     flex-direction: column;
     flex: 0 0 7%;
     background-color: cornflowerblue;
   }
 
+  @media screen and (max-width: 900px) {
+    .aside {
+      display: none;
+    }
+  }
+  //основні блоки контентної частини
   .main__content {
-    //background-color: #4b2f89;
     flex: 1 1 60%;
     display: flex;
     flex-direction: column;
   }
 
+  //верхній блок екрану
   .wrap__screen {
     flex: 1 1 auto;
     background-color: cadetblue;
   }
 
+  //блок нижній - картки, сайдбар, футер
   .wrap__content {
     flex: 1 1 auto;
     display: flex;
@@ -66,46 +82,59 @@ body {
     background-color: darksalmon;
   }
 
-  .top-screen {
-    height: 60%;
-    //background-color: cadetblue;
-
-  }
-
+  //підменю основного екрану
   .bottom-screen {
-    height: 30%;
+    border-bottom: unset;
     justify-content: space-evenly;
-    //background-color: burlywood;
   }
 
+  @media screen and (max-width: 900px) {
+    .bottom-screen {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  //блок "карток"
   .content-box {
-    flex: 1 1 auto;
-    //background-color: bisque;
-    //height: 50%;
+    flex: 1 1 80%;
     flex-wrap: wrap;
-
+  @media screen and (max-width: 768px) {
+    .content-box{
+      display: flex;
+      flex-direction: column;
+    }
+  }
     .box__inner {
       flex: 0 1 40%;
     }
   }
 
-  .aside6 {
-    align-self: start;
-    flex-direction: column;
-    flex: 0 0 7%;
-    //background-color: darksalmon;
+  //правий сайдбар
+  .sidebar {
+    background-color: tomato;
+    flex-wrap: wrap;
+    flex-basis: 7%;
+
+    .sidebar__wrap {
+      display: flex;
+    }
+
+    .sidebar__content {
+      flex: 0 1 40%;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .sidebar {
+      display: flex;
+      flex: 1 1 100%;
+
+    }
   }
 
   .footer {
     flex: 0 1 100%;
     flex-direction: column;
-    //background-color: grey;
   }
 }
 
-@media screen and (max-width: 900px){
-  .flex__container{
-    display: flex;
-    flex-direction: column;
-  }
-}

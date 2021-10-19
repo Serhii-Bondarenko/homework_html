@@ -1,26 +1,27 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
   color: silver;
+  max-width: 1215px;
+  width: 100%;
 }
 
 .border {
-  border: 4px solid black;
-  border-bottom: unset;
+  border: 3px solid black;
 }
 
 .inner__content-style {
+  text-align: center;
   padding: 10px;
   margin: 5px;
   background-color: #eaeaea;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .flex__container {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
 }
 .flex__container .flex__item {
   display: flex;
@@ -28,15 +29,28 @@ body {
   justify-content: center;
 }
 .flex__container .header {
-  height: 100px;
   background-color: silver;
   justify-content: space-between;
   flex: 0 1 100%;
 }
+.flex__container .header .header__inner {
+  width: 5%;
+}
+@media screen and (max-width: 600px) {
+  .flex__container .header .header__inner {
+    width: 10%;
+  }
+}
 .flex__container .aside {
+  align-self: stretch;
   flex-direction: column;
   flex: 0 0 7%;
   background-color: cornflowerblue;
+}
+@media screen and (max-width: 900px) {
+  .flex__container .aside {
+    display: none;
+  }
 }
 .flex__container .main__content {
   flex: 1 1 60%;
@@ -53,35 +67,49 @@ body {
   flex-wrap: wrap;
   background-color: darksalmon;
 }
-.flex__container .top-screen {
-  height: 60%;
-}
 .flex__container .bottom-screen {
-  height: 30%;
+  border-bottom: unset;
   justify-content: space-evenly;
 }
+@media screen and (max-width: 900px) {
+  .flex__container .bottom-screen {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .flex__container .content-box {
-  flex: 1 1 auto;
+  flex: 1 1 80%;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .flex__container .content-box .content-box {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .flex__container .content-box .box__inner {
   flex: 0 1 40%;
 }
-.flex__container .aside6 {
-  align-self: start;
-  flex-direction: column;
-  flex: 0 0 7%;
+.flex__container .sidebar {
+  background-color: tomato;
+  flex-wrap: wrap;
+  flex-basis: 7%;
+}
+.flex__container .sidebar .sidebar__wrap {
+  display: flex;
+}
+.flex__container .sidebar .sidebar__content {
+  flex: 0 1 40%;
+}
+@media screen and (max-width: 900px) {
+  .flex__container .sidebar {
+    display: flex;
+    flex: 1 1 100%;
+  }
 }
 .flex__container .footer {
   flex: 0 1 100%;
   flex-direction: column;
-}
-
-@media screen and (max-width: 900px) {
-  .flex__container {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
