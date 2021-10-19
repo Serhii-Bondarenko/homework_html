@@ -11,6 +11,13 @@ body {
   justify-content: center;
 }
 
+.wrap-gap {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
 .flex__container {
   margin: 0 auto;
   height: 1200px;
@@ -26,11 +33,7 @@ body {
   flex: 0 1 100%;
 }
 .flex__container .f2 {
-  column-gap: 10px;
-  row-gap: 10px;
   flex: 2 1 60%;
-  display: flex;
-  flex-wrap: wrap;
 }
 .flex__container .f2 .main__item {
   flex: 1 1 100%;
@@ -45,10 +48,6 @@ body {
   flex: 0 1 100%;
 }
 .flex__container .block__wrap {
-  column-gap: 10px;
-  row-gap: 10px;
-  display: flex;
-  flex-wrap: wrap;
   flex: 1 1 60%;
 }
 .flex__container .block__wrap .inner-item {

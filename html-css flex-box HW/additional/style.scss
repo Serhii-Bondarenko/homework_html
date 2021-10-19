@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 1200px;
-  height: 100vh;
+  //height: 1000px;
 
   .flex__item {
     display: flex;
@@ -30,6 +30,7 @@ body {
   }
 
   .header {
+    height: 100px;
     background-color: silver;
     justify-content: space-between;
     flex: 0 1 100%;
@@ -73,7 +74,7 @@ body {
 
   .bottom-screen {
     height: 30%;
-    justify-content: center;
+    justify-content: space-evenly;
     //background-color: burlywood;
   }
 
@@ -89,6 +90,7 @@ body {
   }
 
   .aside6 {
+    align-self: start;
     flex-direction: column;
     flex: 0 0 7%;
     //background-color: darksalmon;
@@ -103,6 +105,7 @@ body {
 
 @media screen and (max-width: 900px){
   .flex__container{
-    background-color: black;
+    display: flex;
+    flex-direction: column;
   }
 }

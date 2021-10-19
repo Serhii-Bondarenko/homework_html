@@ -13,6 +13,13 @@ body {
   justify-content: center;
 }
 
+.wrap-gap {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
 //флекс контейнер
 .flex__container {
   margin: 0 auto;
@@ -35,11 +42,7 @@ body {
   }
 
   .f2 {
-    column-gap: 10px;
-    row-gap: 10px;
     flex: 2 1 60%;
-    display: flex;
-    flex-wrap: wrap;
 
     .main__item {
       flex: 1 1 100%;
@@ -60,10 +63,6 @@ body {
   }
 
   .block__wrap {
-    column-gap: 10px;
-    row-gap: 10px;
-    display: flex;
-    flex-wrap: wrap;
     flex: 1 1 60%;
 
     .inner-item {
@@ -99,3 +98,5 @@ body {
     }
   }
 }
+
+
