@@ -1,0 +1,89 @@
+body{
+  //обмеження ширини контент по центру
+  max-width: 1000px ;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+//стилі тексу
+.text-style, .text{
+  display: flex;
+  justify-content: center;
+  color: #eaeaea;
+}
+//флекс контейнер
+.wrapper{
+  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  //блок хедер
+  .header{
+    background-color: cornflowerblue;
+  }
+  //блок мейн
+  .main{
+    height: 400px;
+    row-gap: 10px;
+    flex: 0 1 100%;
+    display: flex;
+    flex-direction: column;
+    // блок - "екран"
+    .screen{
+      column-gap: 1%;
+      flex: 0 1 100%;
+      display: flex;
+      flex-wrap: wrap;
+      //ліва частина
+      .left__screen{
+        height: 400px;
+        row-gap: 10px;
+        flex: 0 1 30%;
+        display: flex;
+        flex-direction: column;
+        .hero{
+          height: 50%;
+          background-color: silver;
+        }
+        .sidebar{
+          height: 100%;
+          background-color: yellowgreen;
+        }
+      }
+      //права частина
+      .right__screen{
+        row-gap: 10px;
+        display: flex;
+        flex: 1 1 60%;
+        flex-direction: column;
+        .main__content{
+          height: 100%;
+          background-color: orange;
+        }
+        .extra__content{
+          height: 50% ;
+          background-color: grey;
+        }
+      }
+    }
+    //меню під основним контентом
+    .related{
+      column-gap: 10px;
+      flex: 0 1 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .related__images{
+        height: 100px;
+        background-color: green;
+        flex: 1 1 60%;
+      }
+      .related__posts{
+        background-color: lightpink;
+        flex: 0 1 30%;
+      }
+    }
+  }
+  //підвал
+  .footer{
+    background-color: orange;
+  }
+}

@@ -1,3 +1,4 @@
+
 body {
   margin: 0 auto;
   box-sizing: border-box;
@@ -41,8 +42,9 @@ body {
     .header__inner {
       width: 5%;
     }
+
     @media screen and (max-width: 600px) {
-      .header__inner{
+      .header__inner {
         width: 10%;
       }
     }
@@ -98,12 +100,13 @@ body {
   .content-box {
     flex: 1 1 80%;
     flex-wrap: wrap;
-  @media screen and (max-width: 768px) {
-    .content-box{
-      display: flex;
-      flex-direction: column;
+    @media screen and (max-width: 768px) {
+      .content-box {
+        display: flex;
+        flex-direction: column;
+      }
     }
-  }
+
     .box__inner {
       flex: 0 1 40%;
     }
@@ -137,4 +140,6 @@ body {
     flex-direction: column;
   }
 }
+// 7.fif Task
+
 
