@@ -1,9 +1,10 @@
 //обнулення
 body {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  max-width: 1215px;
-  width: 100%;
+  //max-width: 1215px;
+  //width: 100%;
 }
 
 ul {
@@ -12,7 +13,11 @@ ul {
 
 a {
   text-decoration: none;
+  color: #eaeaea;
+}
 
+p {
+  color: #eaeaea;
 }
 
 //блоки
@@ -52,6 +57,29 @@ a {
 }
 
 //загальні стилі
+
+.wrapper {
+  margin: 0 auto;
+  background-color: silver;
+  row-gap: 20px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.height__inner {
+  height: 20px;
+}
+
 .top__block, .bottom__block {
   height: 300px;
   display: flex;
@@ -88,14 +116,20 @@ a {
   flex-basis: 80%;
 }
 
+.r-gap {
+  row-gap: 20px;
+}
+
+.c-gap {
+  column-gap: 20px;
+}
 
 //унікальні стилі
-.wrapper {
+.wrapper-1 {
   background-color: #bbbcee;
 
   .top__block {
     .top__content-block {
-      row-gap: 20px;
       height: 80%;
       border: #34abf1 2px solid;
       border-radius: 20px;
@@ -120,7 +154,6 @@ a {
       .card__item-link {
         padding: 20px;
         display: flex;
-        row-gap: 20px;
 
         .card__item-description {
           flex-wrap: wrap;
@@ -138,3 +171,174 @@ a {
     }
   }
 }
+// шапка сайту
+.header {
+  //верхнє меню
+  .header__up-line {
+    display: flex;
+    height: 40px;
+    background-color: aquamarine;
+
+    .line__content {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+  }
+//головне меню
+  .header__main-content {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header__content-elem:first-child {
+      width: 300px;
+    }
+  }
+}
+
+
+.main__caption-block .main__caption_block-element {
+  width: 100px;
+  height: 40px;
+
+}
+// основна інформація
+main {
+  //блок заголовку
+  .caption__container {
+    align-items: center;
+    height: 400px;
+    background-color: aquamarine;
+
+    .main__caption {
+      max-width: 600px;
+    }
+
+    .main__caption-description {
+      text-align: center;
+    }
+
+  }
+//картки
+  .main__card-top, .main__card-bottom {
+    width: 200px;
+  }
+
+  .main__cards-caption {
+    display: flex;
+
+    .main__cards-title {
+      width: 15%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .main__cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    .main__card {
+      flex: 1 1 25%;
+      padding: 10px 0;
+      row-gap: 10px;
+      border-radius: 15px;
+      border: 2px aquamarine solid;
+
+      .main__card-top {
+        .card__img {
+          width: 100%;
+        }
+      }
+
+      .card__title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .card__footer-line {
+        height: 1px;
+        width: 100%;
+        background-color: aquamarine;
+      }
+
+      .card__active {
+        .card__active_soc-list {
+          column-gap: 5px;
+
+          a {
+            font-size: 4px;
+          }
+        }
+      }
+    }
+  }
+//поля з текстом
+  .main__text-field {
+    & > div {
+      padding: 40px;
+    }
+
+    .main__text_field-left {
+      & p {
+        color: #34ABF1FF;
+      }
+
+      & .main__text_field-btn > div {
+        background-color: #34abf1;
+      }
+
+      background-color: darkblue;
+    }
+
+    .main__text_field-caption {
+      display: flex;
+    }
+
+    .main__text_field-txt {
+      line-height: 1.5;
+    }
+
+    .main__text_field-right {
+      & p {
+        color: darkblue;
+      }
+
+      background-color: #34ABF1FF;
+    }
+
+    .main__text_field-btn > div {
+      padding: 20px;
+    }
+  }
+}
+
+//підвал
+.footer {
+  padding: 40px;
+  background-color: #3535c9;
+
+  .footer__container {
+    width: 50%;
+
+    .footer__content-block {
+      display: flex;
+      justify-content: space-around;
+
+      div {
+        background-color: #eaeaea;
+      }
+    }
+
+  }
+
+  .footer__content_bottom-line {
+    height: 2px;
+    background-color: #00a4ff;
+    width: 100%;
+  }
+}
+
