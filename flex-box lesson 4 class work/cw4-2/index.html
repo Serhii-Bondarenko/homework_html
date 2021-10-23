@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>cw4-2</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="media__css/media.css">
 </head>
 <body>
 <!--загальна обгортка-->
@@ -14,6 +18,7 @@
         <div class="header__up-line">
             <!--            обгортка контенту блока-->
             <div class="line__content wrap c-gap">
+                <div id="line__content_burger-menu"><i class="fas fa-bars"></i></div>
                 <!--                контент-->
                 <div class="up-line__content-item blue__row-s">
                 </div>
@@ -27,7 +32,7 @@
         </div>
         <div class="header__main-content wrap">
             <div class="header__content-elem square center"><a href="#">logo</a></div>
-            <nav class="header__content-elem line__content center height__inner c-gap ">
+            <nav class="header__content-elem line__content center c-gap ">
                 <!--                контент-->
                 <div class="up-line__content-item blue__row-l center height__inner">
                     <a class="nav__link" href="#">tap</a>
@@ -70,7 +75,7 @@
                 </div>
             </div>
         </div>
-        <div class="wrapper-1 col">
+        <div class="wrapper-1 col r-gap">
             <!--    перший блок згори-->
             <div class="top__block">
                 <!--        внутрішній блок-->
@@ -125,7 +130,7 @@
             <!--    нижній блок-->
             <div class="bottom__block">
                 <!--        внутрішній блок-->
-                <div class="bottom__content-block flex-basics">
+                <div class="bottom__content-block">
                     <!--            список продуктів-->
                     <div class="card__list">
                         <!--                картка-->
@@ -411,7 +416,7 @@
                 </div>
             </div>
             <div class="main__text_field-right">
-                <div class="main__text_field-caption">
+                <div class="main__text_field-caption c-gap">
                     <p class="main__text_field-title">Lorem</p>
                     <p class="main__text_field-subtitle">Lorem ipsum.</p>
                 </div>
@@ -439,5 +444,7 @@
         </div>
     </footer>
 </div>
+
+<script src="https://kit.fontawesome.com/0df36b7ac6.js" crossorigin="anonymous"></script>
 </body>
 </html>

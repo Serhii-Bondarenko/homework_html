@@ -3,8 +3,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  //max-width: 1215px;
-  //width: 100%;
 }
 
 ul {
@@ -62,6 +60,7 @@ p {
   margin: 0 auto;
   background-color: silver;
   row-gap: 20px;
+  width: 100%;
 }
 
 .wrap {
@@ -142,18 +141,20 @@ p {
   }
 
   .bottom__block {
-    height: 300px;
+    height: 100%;
     background-color: #0c0c46;
-
+    padding: 20px;
     .bottom__content-block {
       .card__item-link:hover {
         border: 2px solid #34abf1;
         transition: 0.2s;
       }
-
+      .card__list{
+        display: flex;
+        //flex-direction: column;
+      }
       .card__item-link {
         padding: 20px;
-        display: flex;
 
         .card__item-description {
           flex-wrap: wrap;
@@ -171,23 +172,30 @@ p {
     }
   }
 }
+
 // шапка сайту
 .header {
   //верхнє меню
   .header__up-line {
     display: flex;
     height: 40px;
-    background-color: aquamarine;
-
+    background-color:  #0f5d7e;
+    i{
+      display: none;
+      font-size: 30px;
+      background-color: transparent;
+      color: #0c0c46;
+    }
     .line__content {
       display: flex;
       align-items: center;
       justify-content: end;
     }
   }
-//головне меню
+
+  //головне меню
   .header__main-content {
-    padding: 20px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -204,13 +212,14 @@ p {
   height: 40px;
 
 }
+
 // основна інформація
 main {
   //блок заголовку
   .caption__container {
     align-items: center;
     height: 400px;
-    background-color: aquamarine;
+    background-color: #0f5d7e;
 
     .main__caption {
       max-width: 600px;
@@ -221,7 +230,8 @@ main {
     }
 
   }
-//картки
+
+  //картки
   .main__card-top, .main__card-bottom {
     width: 200px;
   }
@@ -276,7 +286,8 @@ main {
       }
     }
   }
-//поля з текстом
+
+  //поля з текстом
   .main__text-field {
     & > div {
       padding: 40px;
@@ -327,8 +338,10 @@ main {
     .footer__content-block {
       display: flex;
       justify-content: space-around;
-
+      flex-wrap: wrap;
       div {
+        height: 6vh;
+        flex: 0 0 6vh;
         background-color: #eaeaea;
       }
     }
@@ -341,4 +354,3 @@ main {
     width: 100%;
   }
 }
-
