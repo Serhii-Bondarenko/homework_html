@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*контент*/
+
+.d-flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex_center {
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  width: 350px;
+  height: 330px;
+  background: #FFFFFF;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ttl-color {
+  color: #BC9060;
+}
+
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+
+//                      ШАПКА
+.header {
+  height: 100vh;
+  background: url("../../image/bg.png") no-repeat center/cover;
+}
+
+.header__btn {
+  padding: 14px 18px;
+  background-color: #FF7400;
+
+  button {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: transparent;
+  }
+}
+
+//        МЕНЮ
+.header__top_row {
+  justify-content: space-between;
+}
+
+.header__burger_menu {
+  i {
+    display: none;
+    font-size: 30px;
+    color: #FF7400;
+  }
+}
+
+.header__menu {
+  display: flex;
+  column-gap: 34px;
+
+  a, li img {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffff;
+  }
+
+  img {
+    width: 20px;
+    height: 18px;
+  }
+
+  .header__nav_menu {
+    padding: 0 16px 0 0;
+    border-right: 2px solid #FFFFFF;
+    height: 70px;
+
+    .header__nav_menu-list {
+      display: flex;
+      column-gap: 23px;
+    }
+  }
+}
+
+
+///     КОНТАКТИ
+.header__contacts {
+  column-gap: 45px;
+
+  .header__contacts_phone {
+    width: 155px;
+  }
+
+  a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    flex: 0 1 100%;
+  }
+}
+
+
+//        ЗАГОЛОВОК
+.header__caption {
+  margin: 120px 0 0 155px;
+  text-align: center;
+  max-width: 550px;
+  width: 100%;
+  row-gap: 20px;
+  font-style: normal;
+  font-weight: normal;
+
+  h2, h1 {
+    font-family: Tinos;
+    color: #D67E35;
+  }
+
+  h2 {
+    font-size: 50px;
+    line-height: 57px;
+  }
+
+  h1 {
+    font-size: 80px;
+    line-height: 92px;
+  }
+
+  p {
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+
+    &:before, &:after {
+      content: "";
+      display: block;
+      width: 61px;
+      height: 2px;
+      background-color: #C4C4C4;
+    }
+
+    &:before {
+      margin-right: 10px;
+    }
+
+    &:after {
+      margin-left: 10px;
+    }
+  }
+}
+
+
+// ОСНОВНИЙ КОНТЕНТ
+.main__box {
+  padding: 0;
+  position: relative;
+  height: 100vh;
+  // АБСОЛЮТНО ПОЗИЦІОНОВАНІ БЛОКИ
+  .main__absolute_list {
+    display: flex;
+    top: -10%;
+    column-gap: 30px;
+    position: absolute;
+
+    .main__absolute_item {
+      width: 100%;
+      text-align: center;
+      font-size: 26px;
+      line-height: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+
+      img {
+        padding-bottom: 5px;
+        width: 126px;
+        height: 104px;
+        align-self: center;
+      }
+
+      p:first-child {
+        padding-bottom: 20px;
+      }
+
+      p:last-child {
+        color: #656363;
+      }
+    }
+  }
+}
