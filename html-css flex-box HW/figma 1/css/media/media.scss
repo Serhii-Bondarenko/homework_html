@@ -1,52 +1,164 @@
 @media screen and (max-width: 375px) {
-  .header, .main{
+  .header, .main {
+    row-gap: 200px;
+  }
+  .header{
     padding: 15px;
   }
   .header__top_row{
-    margin: 0 0 200px 0;
+    padding: 0;
+    position: relative;
+  }
+  .header__menu, .header__nav_menu-list, .header__contacts {
+    flex-direction: column;
   }
   .header__menu{
-    display: none;
+    //display: none;
+    row-gap: 10%;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(14, 13, 13, 1), rgba(14, 13, 13, 0.8));
+    top: 40px;
+    position: absolute;
+    align-items: center;
+    .header__nav_menu{
+      border: none;
+      .header__nav_menu-list{
+        padding: 20px;
+        row-gap: 30px;
+        text-align: center;
+        & > li > a {
+          font-size: 30px;
+        }
+        img{
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .header__contacts{
+      text-align: center;
+      row-gap: 20px;
+      .header__contacts_phone{
+        width: 100%;
+      }
+      a > img, span{
+        font-size: 25px;
+      }
+      a > p{
+        margin: 20px 0 0 0;
+        font-size: 30px ;
+        line-height: 1;
+      }
+      button{
+        font-size: 20px;
+        width: 200px;
+        height: 50px;
+      }
+    }
   }
-  .header__burger_menu>i{
-      display: block;
+  .header__burger_menu > i {
+    display: block;
   }
-  .wrapper{
+  .wrapper {
     max-width: 340px;
   }
-  .header__logo .header__logo_link img{
+  .header__logo .header__logo_link img {
     width: 50px;
   }
-  .header__caption{
+  .header__caption {
     padding: 0;
     margin: 0;
   }
-  .header__caption{
+  .header__caption {
     row-gap: 45px;
-    h2{
+
+    h2 {
       font-size: 30px;
       line-height: 34px;
     }
-    h1{
+
+    h1 {
       font-size: 40px;
       line-height: 46px;
       margin: 0 0 10px 0;
     }
-    p{
+
+    p {
       font-size: 15px;
       line-height: 20px;
-      &::before, &::after{
+
+      &::before, &::after {
         display: none;
       }
     }
-    button{
+
+    button {
       max-width: 135px;
       font-size: 14px;
       line-height: 19px;
     }
   }
-  .main__absolute_list{
+  .main__box > .main__absolute_list {
+    position: relative;
     flex-direction: column;
     row-gap: 15px;
+  }
+  .main__history {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    .main__history_left {
+      .main__history_left-caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > h2 {
+          max-width: 180px;
+        }
+
+        & > p {
+          max-width: 290px;
+        }
+      }
+
+      .main__history_left-count {
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+
+    .main__history_right {
+      padding-left: 24px;
+
+      & > img {
+        margin: 0 auto;
+        width: 290px;
+        height: 260px;
+      }
+    }
+  }
+  .footer{
+    position: relative;
+    margin: 360% 0 0 0;
+    .footer__banner {
+      row-gap: 40px;
+      max-width: 290px;
+      flex-direction: column;
+      .footer__banner_content > h2{
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+      }
+      .footer__banner_content > p{
+          font-size: 24px;
+          line-height: 33px;
+          text-align: center;
+      }
+    }
   }
 }
