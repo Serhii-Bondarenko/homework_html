@@ -196,8 +196,8 @@ p {
     font-size: 34px;
   }
   .main__content_left p::after {
-    top: 125%;
-    left: 25%;
+    top: 125% !important;
+    left: 25% !important;
   }
   .main__content_left p::before {
     display: none;

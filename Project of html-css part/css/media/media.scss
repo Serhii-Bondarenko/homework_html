@@ -1,0 +1,179 @@
+@media screen and (max-width: 375px) {
+  header .header__top {
+    position: unset;
+  }
+  .header__nav_collapse {
+    padding-top: 10px;
+  }
+  .nav-link, .dropdown-menu {
+    text-align: center;
+  }
+  .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: start;
+  }
+  .header__nav_active .nav-link {
+    margin: 0 30px 0 0;
+  }
+  header .header__main {
+    padding-top: 0;
+  }
+  .header__main_nav {
+    flex-direction: column-reverse;
+    align-items: end;
+
+    .header__nav_wt, .header__nav_loc {
+      display: none;
+    }
+  }
+  .header__main_logo img {
+    max-width: 160px;
+    max-height: 60px;
+  }
+  .header__main_nav .header__nav_callback > a:first-child {
+    font-size: 14px !important;
+    line-height: 16px !important;
+  }
+  header .header__main_info .header__nav_callback a > span {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  header .header__main_info .header__nav_social {
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
+  header .header__main_info .header__nav_social a > p {
+    font-size: 8px;
+    line-height: 10px;
+    white-space: nowrap;
+  }
+  .header__main_row .header__main_form .header__main_form-catalog > div {
+    .header__main_form_btn-sm, .fas {
+      display: block;
+    }
+  }
+  .header__main_row .header__main_form .header__main_form-catalog > div .header__main_form-btn {
+    display: none !important;
+  }
+  .header__main_user_list {
+    display: none;
+  }
+  header .header__main_row .header__main_form .header__main_form-search {
+    display: none;
+  }
+  .header__main_form {
+    padding-top: 18px;
+  }
+  header .header__main_row .header__main_form .header__main_form-search-sm {
+    display: block;
+  }
+  .main {
+    padding-top: 15px;
+  }
+  .main__carousel {
+    padding: 15px 15px 30px 15px;
+    border-radius: 10px;
+  }
+  main .main__slider_top .main__carousel_list .main__carousel_item div a img {
+    width: 100px;
+    height: 90px;
+  }
+  main .main__slider_top .main__carousel_list .main__carousel_item div {
+    h3 {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    & > div {
+      flex-direction: column-reverse;
+    }
+
+    a {
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    .price {
+      p:first-child {
+        font-size: 18px;
+        line-height: 20px;
+      }
+
+      .text-decoration-line-through {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+
+    button {
+      width: 124px;
+      height: 34px;
+    }
+  }
+  .main__stock_list {
+    margin: 0 auto;
+  }
+  .main__slider {
+    display: none;
+  }
+  main .main__product_block {
+    padding-top: 20px;
+  }
+  main .main__product_caption .main__product_caption-list {
+    flex-wrap: nowrap;
+  }
+  main .main__product_caption .main__product_caption-list .main__product_caption-item {
+    flex: 0 1 20%;
+    padding: 5px;
+
+    a {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  main .main__product_list {
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .main__product_item, main .main__product_item img {
+    max-width: 160px;
+  }
+  main .main__product_item {
+    flex-grow: 1;
+    flex-basis: 160px;
+  }
+  .main__product_item-active button:nth-child(3) > img {
+    display: none;
+  }
+  main .main__product_item .main__product_item-active button:first-child {
+    white-space: nowrap;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 10px;
+  }
+  main .main__product_item_divide-sm{
+    display: block;
+  }
+  main .main__product_cards .main__product_cards-btn{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__main_logo > a > img {
+    width: 200px;
+    height: 70px;
+  }
+  .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: start;
+  }
+  .header__nav_active .nav-link {
+    margin: 0 30px 0 0;
+  }
+}

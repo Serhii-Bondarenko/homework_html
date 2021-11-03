@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset/reset.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick-1.8.1/slick/slick.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media/media.css">
+    <title>AVT-ZAP</title>
+</head>
+<body>
+<div class="wrapper d-flex flex-column">
+    <header class="header">
+        <div class="header__content d-flex flex-column">
+            <div class="header__top container-fluid">
+                <div class="header__top_container container">
+                    <nav class="header__top_row navbar navbar-expand-md ">
+                        <div class="header__nav_content d-flex container-fluid ">
+                            <div class="header__nav_active nav-item dropdown">
+                                <a class="nav-link d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
+                                   role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="me-1" src="images/placeholder%201.svg" alt="location">
+                                    <p>
+                                        Ваш город: <span id="#">Москва</span>
+                                    </p>
+                                </a>
+                                <div class="header__nav_dropdown header__nav_city dropdown-menu "
+                                     aria-labelledby="navbarDropdownMenuLink">
+                                    <form action="#" method="post" class="header__form">
+                                        <div class="header__form_title d-flex justify-content-between">
+                                            <h4 class="fw-bold">
+                                                Выберите свой город
+                                            </h4>
+                                            <button><img src="images/close%20(2)%201.svg" alt="Close"></button>
+                                        </div>
+                                        <div>
+                                            <select class="form-select" aria-label="Default select">
+                                                <option selected="">Ваш город</option>
+                                                <option value="1">Москва</option>
+                                                <option value="2">Санкт-Петербург</option>
+                                                <option value="3">Краснодар</option>
+                                                <option value="4">Екатеринбург</option>
+                                                <option value="5">Ростов-на-Дону</option>
+                                                <option value="6">Самара</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="header__nav_collapse collapse navbar-collapse justify-content-between"
+                                 id="navbarSupportedContent">
+                                <ul class="header__nav_collapse-left navbar-nav align-items-center">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1"
+                                           role="button"
+                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                            Информация
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3"
+                                           role="button"
+                                           data-bs-toggle="dropdown" aria-expanded="false">
+                                            Сотрудничество
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="header__nav_collapse-right navbar-nav  align-items-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Доставка</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Оплата</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Новости</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Журнал</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">О магазине</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__main container-fluid">
+                <div class="container pb-3">
+                    <div class="header__main_info row justify-content-between align-items-center pt-3">
+                        <nav class="header__main_logo navbar col-xl-3 col-6">
+                            <a class="navbar-brand" href="#">
+                                <img src="images/logo.png" alt="Logo">
+                            </a>
+                        </nav>
+                        <ul class="header__main_nav nav row col-xl-9 col-6 align-items-center justify-content-end">
+                            <li class="header__nav_wt nav-item row col-xl-3">
+                                <img class="col-xl-3 col-2" src="images/time.svg" alt="Work time">
+                                <p class="col-xl-9 col-5 text-end">
+                                    Мы работаем: будни - 9:00-21:00
+                                    сб. - 10:00-15:00
+                                </p>
+                            </li>
+                            <li class="header__nav_loc nav-item col-xl-3">
+                                <a class="row align-items-center" href="#">
+                                    <img class="col-xl-3 " src="images/placeholder%201%20(1).svg" alt="Location">
+                                    <p class="col-xl-9">
+                                        Невский пр-т, д. 45
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="header__nav_social col-xl-3 col-10">
+                                <a class="d-flex align-items-center justify-content-center " href="#">
+                                    <img src="images/whatsapp.svg" alt="WhatsApp">
+                                    <p>
+                                        Напишите нам в WhatsApp
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="header__nav_callback row col-xl-3 col-12 flex-column text-end">
+                                <a class="" href="tel:+7 383 291 92 86">+7 383 291 92 86</a>
+                                <a class="" href="#" id="navbarDropdownMenuLink-cb"
+                                   role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span id="##">форма обратной связи</span>
+                                </a>
+                                <div class="header__nav_dropdown dropdown-menu "
+                                     aria-labelledby="navbarDropdownMenuLink">
+                                    <form action="#" method="post" class="header__form d-flex flex-column">
+                                        <div class="header__form_title d-flex justify-content-between">
+                                            <h4 class="fw-bold">
+                                                Заказать звонок
+                                            </h4>
+                                            <button><img src="images/close%20(2)%201.svg" alt="Close"></button>
+                                        </div>
+                                        <div class="header__form_callback d-flex flex-column">
+                                            <div class="header__callback_name">
+                                                <input id="header__form_input" type="text">
+                                                <label for="header__form_input">Ваше имя</label>
+                                            </div>
+                                            <div class="header__callback_tel-number ">
+                                                <div class="header__tel_number-wrap d-flex align-items-center">
+                                                    <select style="width: 80px; height:50px">
+                                                        <option style="font-size: 25px; background:
+                                                        url('images/flag.png') 100% no-repeat" class="icon">
+                                                        </option>
+                                                    </select>
+                                                    <div>
+                                                        <input id="header__form_input-tel" value="+7"
+                                                               placeholder="(999) 999-99-99">
+                                                        <label for="header__form_input-tel">Номер телефона</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="header__callback_btn" type="submit">Заказать звонок</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__main_row">
+                        <div class="header__main_form d-flex align-items-center justify-content-between ">
+                            <div class="header__main_form-catalog">
+                                <div class="dropdown">
+                                    <button class="header__main_form_btn-sm align-items-center justify-content-center"
+                                            type="button"
+                                            id="dropdownMenuButton"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                    <button class="header__main_form-btn d-flex align-items-center justify-content-center"
+                                            type="button"
+                                            id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        Каталог
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <form class="header__main_form-search " action="#" method="post">
+                                <input type="text" placeholder="Поиск по наименованию или артикулу">
+                                <button type="button">Найти</button>
+                            </form>
+                            <form class="header__main_form-search-sm " action="#" method="post">
+                                <input type="text" placeholder="Поиск по наименованию...">
+                                <button type="button"><i class="fas fa-search"></i></button>
+                            </form>
+                            <nav class="header__main_user_list nav justify-content-end">
+                                <a class="header__main_user_item nav-link d-flex align-items-center pe-2  p-0"
+                                   aria-current="page" href="#">
+                                    <img src="images/user%20(1)%201.svg" alt="User">
+                                    <p>
+                                        Войти
+                                    </p>
+                                </a>
+                                <a class="header__main_user_item nav-link d-flex align-items-center p-0 pe-2"
+                                   href="#">
+                                    <img src="images/Vector.svg" alt="Favorite">
+                                    <p>
+                                        Избранное
+                                    </p>
+                                </a>
+                                <a class="header__main_user_item nav-link d-flex align-items-center p-0" href="#">
+                                    <img src="images/shop_cart.svg" alt="Shop-basket">
+                                    <p>
+                                        В корзине
+                                        нет товаров
+                                    </p>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main container-fluid">
+        <div class="main__content container d-flex flex-column">
+            <div class="main__slider_block">
+                <div class="main__slider_top justify-content-between row">
+                    <div id="carouselWithIndicators"
+                         class="main__carousel d-flex align-items-center carousel slide col-xl-8"
+                         data-bs-ride="carousel">
+                        <ol class=" carousel-indicators">
+                            <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="2"></li>
+                        </ol>
+                        <div class="main__carousel_list carousel-inner">
+                            <div class="main__carousel_item carousel-item active">
+                                <div class="d-flex align-items-xl-center justify-content-center">
+                                    <div class="d-flex flex-column">
+                                        <h3 class=" pb-xl-1">Сцепление в сборе</h3>
+                                        <a class="code pb-xl-4 pb-2" href="#">
+                                            0AMCLUTCH
+                                        </a>
+                                        <div class="price d-flex align-items-xl-baseline pb-xl-3 pb-2">
+                                            <p>
+                                                14 499,99 ₽
+                                            </p>
+                                            <p class="text-decoration-line-through">
+                                                18 550,99 ₽
+                                            </p>
+                                        </div>
+                                        <button class="d-flex justify-content-center align-items-center">
+                                            <img src="images/cart%201.svg" alt="Buy">
+                                            В корзину
+                                        </button>
+                                    </div>
+                                    <a class="main__carousel_item-img" href="#">
+                                        <img src="images/part1.png" alt="Sceplenie)">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="main__carousel_item carousel-item">
+                                <div class="d-flex align-items-xl-center justify-content-center">
+                                    <div class="d-flex flex-column">
+                                        <h3 class=" pb-xl-1">Сцепление в сборе</h3>
+                                        <a class="code pb-xl-4 pb-2" href="#">
+                                            0AMCLUTCH
+                                        </a>
+                                        <div class="price d-flex align-items-xl-baseline pb-xl-3 pb-2">
+                                            <p>
+                                                14 499,99 ₽
+                                            </p>
+                                            <p class="text-decoration-line-through">
+                                                18 550,99 ₽
+                                            </p>
+                                        </div>
+                                        <button class="d-flex justify-content-center align-items-center">
+                                            <img src="images/cart%201.svg" alt="Buy">
+                                            В корзину
+                                        </button>
+                                    </div>
+                                    <a class="main__carousel_item-img" href="#">
+                                        <img src="images/part1.png" alt="Sceplenie)">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="main__carousel_item carousel-item">
+                                <div class="d-flex align-items-xl-center justify-content-center">
+                                    <div class="d-flex flex-column">
+                                        <h3 class=" pb-xl-1">Сцепление в сборе</h3>
+                                        <a class="code pb-xl-4 pb-2" href="#">
+                                            0AMCLUTCH
+                                        </a>
+                                        <div class="price d-flex align-items-xl-baseline pb-xl-3 pb-2">
+                                            <p>
+                                                14 499,99 ₽
+                                            </p>
+                                            <p class="text-decoration-line-through">
+                                                18 550,99 ₽
+                                            </p>
+                                        </div>
+                                        <button class="d-flex justify-content-center align-items-center">
+                                            <img src="images/cart%201.svg" alt="Buy">
+                                            В корзину
+                                        </button>
+                                    </div>
+                                    <a class="main__carousel_item-img" href="#">
+                                        <img src="images/part1.png" alt="Sceplenie)">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselWithIndicators" role="button"
+                           data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <!--                            <span class="visually-hidden">Previous</span>-->
+                        </a>
+                        <a class="carousel-control-next" href="#carouselWithIndicators" role="button"
+                           data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <!--                            <span class="visually-hidden">Next</span>-->
+                        </a>
+                    </div>
+                    <div class="main__stock_list row col-xl-4 pt-xl-0 pt-2">
+                        <a href="#" class="main__stock_item d-flex flex-column">
+                            <h4>Акция</h4>
+                            <div class="main__stock_item-product row align-items-center">
+                                <img class="col-xl-4 col-3" src="images/part2.png" alt="part">
+                                <div class="main__stock_product-text col-xl-6 col-7">
+                                    <p>
+                                        Обгонная муфта
+                                        гидротрансформатор
+                                    </p>
+                                    <span>BW-SP-2 SONNAX</span>
+                                </div>
+                            </div>
+                            <div class="main__stock_item-price d-flex align-self-end">
+                                <p>
+                                    4 430₽
+                                    <span>5 430₽</span>
+                                </p>
+                                <button type="button">
+                                    <img src="images/cart%201.svg" alt="Buy">
+                                </button>
+                            </div>
+                        </a>
+                        <a href="#" class="main__stock_item d-flex flex-column">
+                            <h4>Акция</h4>
+                            <div class="main__stock_item-product row align-items-center ">
+                                <img class="col-xl-4 col-3" src="images/part3.png" alt="part">
+                                <div class="main__stock_product-text col-xl-7 col-7">
+                                    <p>
+                                        Комплект фрикционных дисков
+                                    </p>
+                                    <span>BW-SP-2 SONNAX</span>
+                                </div>
+                            </div>
+                            <div class="main__stock_item-price d-flex align-self-end">
+                                <p>
+                                    4 430₽
+                                    <span>5 430₽</span>
+                                </p>
+                                <button type="button">
+                                    <img src="images/cart%201.svg" alt="Buy">
+                                </button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="main__slider_bottom pt-xl-5 container">
+                    <div class="main__slider">
+                        <div id="carouselWithIndicators1" class="main__slider_track d-flex">
+                            <div class="main__slider_item">
+                                <a href="#"
+                                   class="main__slider_item-wrap d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h3>Масла</h3>
+                                        <p>
+                                            Трансмиссионное масло;
+                                            присалка в масло акпп
+                                        </p>
+                                        <button type="button"> Перейти</button>
+                                    </div>
+                                    <img src="images/oil.png" alt="Oil">
+                                </a>
+                            </div>
+                            <div class="main__slider_item">
+                                <a href="#"
+                                   class="main__slider_item-wrap d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h3>Фильтры</h3>
+                                        <p>
+                                            Масляный фильтр;
+                                            фильтр воздушный
+                                        </p>
+                                        <button type="button"> Перейти</button>
+                                    </div>
+                                    <img src="images/filtr.png" alt="">
+                                </a>
+                            </div>
+                            <div class="main__slider_item">
+                                <a href="#"
+                                   class="main__slider_item-wrap d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h3>Радиаторы</h3>
+                                        <p>
+                                            Дополнительные
+                                            радиаторы
+                                        </p>
+                                        <button type="button"> Перейти</button>
+                                    </div>
+                                    <img src="images/radiator.png" alt="Oil">
+                                </a>
+                            </div>
+                            <div class="main__slider_item">
+                                <a href="#"
+                                   class="main__slider_item-wrap d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h3>Масла</h3>
+                                        <p>
+                                            Трансмиссионное масло;
+                                            присалка в масло акпп
+                                        </p>
+                                        <button type="button"> Перейти</button>
+                                    </div>
+                                    <img src="images/oil.png" alt="Oil">
+                                </a>
+                            </div>
+                            <div class="main__slider_item">
+                                <a href="#"
+                                   class="main__slider_item-wrap d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h3>Фильтры</h3>
+                                        <p>
+                                            Масляный фильтр;
+                                            фильтр воздушный
+                                        </p>
+                                        <button type="button"> Перейти</button>
+                                    </div>
+                                    <img src="images/filtr.png" alt="">
+                                </a>
+                            </div>
+                            <div class="main__slider_item">
+                                <a href="#"
+                                   class="main__slider_item-wrap d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <h3>Радиаторы</h3>
+                                        <p>
+                                            Дополнительные
+                                            радиаторы
+                                        </p>
+                                        <button type="button"> Перейти</button>
+                                    </div>
+                                    <img src="images/radiator.png" alt="Oil">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__product_block">
+                <div class="main__product ">
+                    <nav class="main__product_caption">
+                        <ul class="main__product_caption-list">
+                            <li class="main__product_caption-item main__product_caption-item1">
+                                <a href="#">Подборки товаров</a>
+                            </li>
+                            <li class="main__product_caption-item main__product_caption-item2">
+                                <a href="#">Акции</a>
+                            </li>
+                            <li class="main__product_caption-item main__product_caption-item3">
+                                <a href="#">Сейчас покупают</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="main__product_cards d-flex flex-column align-items-center justify-content-center">
+                        <ul class="main__product_list p-0 row">
+                            <li class="main__product_item d-flex flex-column">
+                                <a class="main__product_item-img pb-2" href="#"><img
+                                        src="images/avt-zap_main_page_v01%20(1)йцу%2012%20(1).png"
+                                        alt="Parts">
+                                </a>
+                                <div class="main__product_item-rating">
+                                    <a href="#"><i class="fas fa-star card-color-gold"> 4.5 </i> <span
+                                            class="ps-1  card-color-grey">10 отзывов</span>
+                                    </a>
+                                </div>
+                                <h3 class="pt-2"><a href="#">Intermediate accumelator sleeve</a></h3>
+                                <p class="pb-4">
+                                    ЦЕНА <a href="#" class="text-decoration-underline ps-1">по запросу</a>
+                                </p>
+                                <div class="main__product_item-active d-flex align-items-center">
+                                    <button class="d-flex align-items-center" type="button"><img class="pe-2"
+                                                                                                 src="images/cart%201.svg"
+                                                                                                 alt="Buy">В корзину
+                                    </button>
+                                    <button type="button"><img src="images/Vector%20(1).svg" alt="Favorite"></button>
+                                    <button type="button"><img src="images/Group%20147.svg" alt="Shedule"></button>
+                                </div>
+                            </li>
+                            <li class="main__product_item d-flex flex-column">
+                                <div class="main__product_item-discount">
+                                    -40%
+                                </div>
+                                <a class="main__product_item-img pb-2" href="#"><img class=""
+                                                                                     src="images/avt-zap_main_page_v01%20(1)йцу%207%20(2).png"
+                                                                                     alt="Parts">
+                                </a>
+                                <div class="main__product_item-rating">
+                                    <a href="#"><i class="fas fa-star card-color-gold"> 4.5 </i> <span
+                                            class="ps-1 card-color-grey">10
+                                        отзывов</span>
+                                    </a>
+                                </div>
+                                <h3 class="pt-2"><a href="#">Комплект фрикционных дисков</a></h3>
+                                <p class="pb-3">
+                                    <a href="#" class=" product__price card-color-gold"> 4 430₽
+                                        <span class="card-color-grey text-decoration-line-through ps-2">5 430₽</span></a>
+                                </p>
+                                <div class="main__product_item-active d-flex align-items-center">
+                                    <button class="d-flex align-items-center" type="button"><img class="pe-2"
+                                                                                                 src="images/cart%201.svg"
+                                                                                                 alt="Buy">В корзину
+                                    </button>
+                                    <button type="button"><img src="images/Vector%20(1).svg" alt="Favorite"></button>
+                                    <button type="button"><img src="images/Group%20147.svg" alt="Shedule"></button>
+                                </div>
+                            </li>
+                            <hr class="main__product_item-divide main__product_item_divide-sm">
+                            <li class="main__product_item d-flex flex-column">
+                                <a class="main__product_item-img pb-2" href="#"><img
+                                        src="images/avt-zap_main_page_v01%20(1)йцу%2012%20(1).png"
+                                        alt="Parts">
+                                </a>
+                                <div class="main__product_item-rating">
+                                    <a href="#"><i class="fas fa-star card-color-gold"> 4.5 </i> <span
+                                            class="ps-1  card-color-grey">10 отзывов</span>
+                                    </a>
+                                </div>
+                                <h3 class="pt-2"><a href="#">Intermediate accumelator sleeve</a></h3>
+                                <p class="pb-4">
+                                    ЦЕНА <a href="#" class="text-decoration-underline ps-1">по запросу</a>
+                                </p>
+                                <div class="main__product_item-active d-flex align-items-center">
+                                    <button class="d-flex align-items-center" type="button"><img class="pe-2"
+                                                                                                 src="images/cart%201.svg"
+                                                                                                 alt="Buy">В корзину
+                                    </button>
+                                    <button type="button"><img src="images/Vector%20(1).svg" alt="Favorite"></button>
+                                    <button type="button"><img src="images/Group%20147.svg" alt="Shedule"></button>
+                                </div>
+                            </li>
+                            <li class="main__product_item d-flex flex-column">
+                                <a class="main__product_item-img pb-2" href="#"><img
+                                        src="images/avt-zap_main_page_v01%20(1)йцу%2013.png"
+                                        alt="Parts">
+                                </a>
+                                <div class="main__product_item-rating">
+                                    <a href="#"><i class="fas fa-star card-color-gold"> 4.5 </i> <span
+                                            class="ps-1  card-color-grey">10 отзывов</span>
+                                    </a>
+                                </div>
+                                <h3 class="pt-2"><a href="#">Intermediate accumelator sleeve</a></h3>
+                                <p class="pb-4">
+                                    ЦЕНА <a href="#" class="text-decoration-underline ps-1">по запросу</a>
+                                </p>
+                                <div class="main__product_item-active d-flex align-items-center">
+                                    <button class="d-flex align-items-center" type="button"><img class="pe-2"
+                                                                                                 src="images/cart%201.svg"
+                                                                                                 alt="Buy">В корзину
+                                    </button>
+                                    <button type="button"><img src="images/Vector%20(1).svg" alt="Favorite"></button>
+                                    <button type="button"><img src="images/Group%20147.svg" alt="Shedule"></button>
+                                </div>
+                            </li>
+                            <hr class="main__product_item-divide">
+                            <li class="main__product_item d-flex flex-column">
+                                <a class="main__product_item-img pb-2" href="#"><img
+                                        src="images/avt-zap_main_page_v01%20(1)йцу%2012%20(1).png"
+                                        alt="Parts">
+                                </a>
+                                <div class="main__product_item-rating">
+                                    <a href="#"><i class="fas fa-star card-color-gold"> 4.5 </i> <span
+                                            class="ps-1  card-color-grey">10 отзывов</span>
+                                    </a>
+                                </div>
+                                <h3 class="pt-2"><a href="#">Intermediate accumelator sleeve</a></h3>
+                                <p class="pb-4">
+                                    ЦЕНА <a href="#" class="text-decoration-underline ps-1">по запросу</a>
+                                </p>
+                                <div class="main__product_item-active d-flex align-items-center">
+                                    <button class="d-flex align-items-center" type="button"><img class="pe-2"
+                                                                                                 src="images/cart%201.svg"
+                                                                                                 alt="Buy">В корзину
+                                    </button>
+                                    <button type="button"><img src="images/Vector%20(1).svg" alt="Favorite"></button>
+                                    <button type="button"><img src="images/Group%20147.svg" alt="Shedule"></button>
+                                </div>
+                            </li>
+                            <li class="main__product_item d-flex flex-column">
+                                <div class="main__product_item-discount">
+                                    -40%
+                                </div>
+                                <a class="main__product_item-img pb-2" href="#"><img class=""
+                                                                                     src="images/avt-zap_main_page_v01%20(1)йцу%207%20(2).png"
+                                                                                     alt="Parts">
+                                </a>
+                                <div class="main__product_item-rating">
+                                    <a href="#"><i class="fas fa-star card-color-gold"> 4.5 </i> <span
+                                            class="ps-1 card-color-grey">10
+                                        отзывов</span>
+                                    </a>
+                                </div>
+                                <h3 class="pt-2"><a href="#">Комплект фрикционных дисков</a></h3>
+                                <p class="pb-3">
+                                    <a href="#" class=" product__price card-color-gold"> 4 430₽
+                                        <span class="card-color-grey text-decoration-line-through ps-2">5 430₽</span></a>
+                                </p>
+                                <div class="main__product_item-active d-flex align-items-center">
+                                    <button class="d-flex align-items-center" type="button"><img class="pe-2"
+                                                                                                 src="images/cart%201.svg"
+                                                                                                 alt="Buy">В корзину
+                                    </button>
+                                    <button type="button"><img src="images/Vector%20(1).svg" alt="Favorite"></button>
+                                    <button type="button"><img src="images/Group%20147.svg" alt="Shedule"></button>
+                                </div>
+                            </li>
+                            <hr class="main__product_item-divide main__product_item_divide-sm">
+                            <li class="main__product_item d-flex flex-column">
+                                <a class="main__product_item-img pb-2" href="#"><img
+                                        src="images/avt-zap_main_page_v01%20(1)йцу%2012%20(1).png"
+                                        alt="Parts">
+                                </a>
+                                <div class="main__product_item-rating">
+                                    <a href="#"><i class="fas fa-star card-color-gold"> 4.5 </i> <span
+                                            class="ps-1  card-color-grey">10 отзывов</span>
+                                    </a>
+                                </div>
+                                <h3 class="pt-2"><a href="#">Intermediate accumelator sleeve</a></h3>
+                                <p class="pb-4">
+                                    ЦЕНА <a href="#" class="text-decoration-underline ps-1">по запросу</a>
+                                </p>
+                                <div class="main__product_item-active d-flex align-items-center">
+                                    <button class="d-flex align-items-center" type="button"><img class="pe-2"
+                                                                                                 src="images/cart%201.svg"
+                                                                                                 alt="Buy">В корзину
+                                    </button>
+                                    <button type="button"><img src="images/Vector%20(1).svg" alt="Favorite"></button>
+                                    <button type="button"><img src="images/Group%20147.svg" alt="Shedule"></button>
+                                </div>
+                            </li>
+                            <li class="main__product_item d-flex flex-column">
+                                <a class="main__product_item-img pb-2" href="#"><img
+                                        src="images/avt-zap_main_page_v01%20(1)йцу%2013.png"
+                                        alt="Parts">
+                                </a>
+                                <div class="main__product_item-rating">
+                                    <a href="#"><i class="fas fa-star card-color-gold"> 4.5 </i> <span
+                                            class="ps-1  card-color-grey">10 отзывов</span>
+                                    </a>
+                                </div>
+                                <h3 class="pt-2"><a href="#">Intermediate accumelator sleeve</a></h3>
+                                <p class="pb-4">
+                                    ЦЕНА <a href="#" class="text-decoration-underline ps-1">по запросу</a>
+                                </p>
+                                <div class="main__product_item-active d-flex align-items-center">
+                                    <button class="d-flex align-items-center" type="button"><img class="pe-2"
+                                                                                                 src="images/cart%201.svg"
+                                                                                                 alt="Buy">В корзину
+                                    </button>
+                                    <button type="button"><img src="images/Vector%20(1).svg" alt="Favorite"></button>
+                                    <button type="button"><img src="images/Group%20147.svg" alt="Shedule"></button>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="main__product_cards-btn" type="button">Показать еще</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+</div>
+
+
+<script src="https://kit.fontawesome.com/0df36b7ac6.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
