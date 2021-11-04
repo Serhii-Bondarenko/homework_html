@@ -25,7 +25,7 @@
         <div class="header__content d-flex flex-column">
             <div class="header__top container-fluid">
                 <div class="header__top_container container">
-                    <nav class="header__top_row navbar navbar-expand-md ">
+                    <nav class="header__top_row navbar navbar-expand-lg ">
                         <div class="header__nav_content d-flex container-fluid ">
                             <div class="header__nav_active nav-item dropdown">
                                 <a class="nav-link d-flex align-items-center" href="#" id="navbarDropdownMenuLink"
@@ -119,42 +119,43 @@
             </div>
             <div class="header__main container-fluid">
                 <div class="container pb-3">
-                    <div class="header__main_info row justify-content-between align-items-center pt-3">
-                        <nav class="header__main_logo navbar col-xl-3 col-6">
+                    <div class="header__main_info row justify-content-between align-items-center pt-xl-3">
+                        <nav class="header__main_logo navbar col-xl-3 col-6 col-md-3">
                             <a class="navbar-brand" href="#">
                                 <img src="images/logo.png" alt="Logo">
                             </a>
                         </nav>
-                        <ul class="header__main_nav nav row col-xl-9 col-6 align-items-center justify-content-end">
-                            <li class="header__nav_wt nav-item row col-xl-3">
-                                <img class="col-xl-3 col-2" src="images/time.svg" alt="Work time">
-                                <p class="col-xl-9 col-5 text-end">
+                        <ul class="header__main_nav nav row col-xl-9 col-6 col-md-7 align-items-center justify-content-xl-end justify-content-md-start">
+                            <li class="header__nav_wt nav-item row col-xl-3 col-md-12 align-items-center justify-content-center">
+                                <img class="col-xl-3 col-md-1" src="images/time.svg" alt="Work time">
+                                <p class="col-xl-9 col-md-10 text-xl-end text-md-center">
                                     Мы работаем: будни - 9:00-21:00
                                     сб. - 10:00-15:00
                                 </p>
                             </li>
-                            <li class="header__nav_loc nav-item col-xl-3">
-                                <a class="row align-items-center" href="#">
-                                    <img class="col-xl-3 " src="images/placeholder%201%20(1).svg" alt="Location">
-                                    <p class="col-xl-9">
+                            <li class="header__nav_loc nav-item col-xl-3 col-md-6">
+                                <a class="row justify-content-md-around align-items-center" href="#">
+                                    <img class="col-xl-3 col-md-2" src="images/placeholder%201%20(1).svg"
+                                         alt="Location">
+                                    <p class="col-xl-9 col-md-9">
                                         Невский пр-т, д. 45
                                     </p>
                                 </a>
                             </li>
-                            <li class="header__nav_social col-xl-3 col-10">
+                            <li class="header__nav_social col-xl-3 col-md-6">
                                 <a class="d-flex align-items-center justify-content-center " href="#">
                                     <img src="images/whatsapp.svg" alt="WhatsApp">
-                                    <p>
+                                    <p class="text-center text-nowrap">
                                         Напишите нам в WhatsApp
                                     </p>
                                 </a>
                             </li>
-                            <li class="header__nav_callback row col-xl-3 col-12 flex-column text-end">
+                            <li class="header__nav_callback row col-xl-3 col-md-12 col-12 flex-column text-xl-end text-md-center text-end">
                                 <a class="" href="tel:+7 383 291 92 86">+7 383 291 92 86</a>
                                 <a class="" href="#" id="navbarDropdownMenuLink-cb"
                                    role="button"
                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span id="##">форма обратной связи</span>
+                                    <span id="callback__form">форма обратной связи</span>
                                 </a>
                                 <div class="header__nav_dropdown dropdown-menu "
                                      aria-labelledby="navbarDropdownMenuLink">
@@ -191,7 +192,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="header__main_row">
+                    <div class="header__main_row mt-md-3 mt-xl-0">
                         <div class="header__main_form d-flex align-items-center justify-content-between ">
                             <div class="header__main_form-catalog">
                                 <div class="dropdown">
@@ -223,23 +224,24 @@
                                 <button type="button"><i class="fas fa-search"></i></button>
                             </form>
                             <nav class="header__main_user_list nav justify-content-end">
-                                <a class="header__main_user_item nav-link d-flex align-items-center pe-2  p-0"
+                                <a class="header__main_user_item nav-link d-flex flex-xl-row flex-md-column align-items-center pe-2  p-0"
                                    aria-current="page" href="#">
                                     <img src="images/user%20(1)%201.svg" alt="User">
                                     <p>
                                         Войти
                                     </p>
                                 </a>
-                                <a class="header__main_user_item nav-link d-flex align-items-center p-0 pe-2"
+                                <a class="header__main_user_item nav-link d-flex flex-xl-row flex-md-column align-items-center p-0 pe-2"
                                    href="#">
                                     <img src="images/Vector.svg" alt="Favorite">
                                     <p>
                                         Избранное
                                     </p>
                                 </a>
-                                <a class="header__main_user_item nav-link d-flex align-items-center p-0" href="#">
+                                <a class="header__main_user_item nav-link d-flex flex-xl-row flex-md-column align-items-center p-0"
+                                   href="#">
                                     <img src="images/shop_cart.svg" alt="Shop-basket">
-                                    <p>
+                                    <p class="text-md-center text-xl-start">
                                         В корзине
                                         нет товаров
                                     </p>
@@ -251,12 +253,12 @@
             </div>
         </div>
     </header>
-    <main class="main container-fluid">
-        <div class="main__content container d-flex flex-column">
-            <div class="main__slider_block">
+    <main class="main">
+        <div class="main__content d-flex flex-column container-fluid p-xl-0">
+            <div class="main__slider_block container">
                 <div class="main__slider_top justify-content-between row">
                     <div id="carouselWithIndicators"
-                         class="main__carousel d-flex align-items-center carousel slide col-xl-8"
+                         class="main__carousel d-flex align-items-center carousel slide col-xl-8 col-md-8"
                          data-bs-ride="carousel">
                         <ol class=" carousel-indicators">
                             <li data-bs-target="#carouselWithIndicators" data-bs-slide-to="0" class="active"></li>
@@ -351,12 +353,12 @@
                             <!--                            <span class="visually-hidden">Next</span>-->
                         </a>
                     </div>
-                    <div class="main__stock_list row col-xl-4 pt-xl-0 pt-2">
+                    <div class="main__stock_list row col-xl-4 col-md-4 pt-xl-0 pt-2" id="anchor__stock">
                         <a href="#" class="main__stock_item d-flex flex-column">
                             <h4>Акция</h4>
                             <div class="main__stock_item-product row align-items-center">
-                                <img class="col-xl-4 col-3" src="images/part2.png" alt="part">
-                                <div class="main__stock_product-text col-xl-6 col-7">
+                                <img class="col-xl-4 col-md-5 col-3" src="images/part2.png" alt="part">
+                                <div class="main__stock_product-text col-xl-4 col-md-7 col-7">
                                     <p>
                                         Обгонная муфта
                                         гидротрансформатор
@@ -377,8 +379,8 @@
                         <a href="#" class="main__stock_item d-flex flex-column">
                             <h4>Акция</h4>
                             <div class="main__stock_item-product row align-items-center ">
-                                <img class="col-xl-4 col-3" src="images/part3.png" alt="part">
-                                <div class="main__stock_product-text col-xl-7 col-7">
+                                <img class="col-xl-4 col-md-5 col-3" src="images/part3.png" alt="part">
+                                <div class="main__stock_product-text col-xl-7 col-md-7 col-7">
                                     <p>
                                         Комплект фрикционных дисков
                                     </p>
@@ -415,7 +417,7 @@
                                 </a>
                             </div>
                             <div class="main__slider_item">
-                                <a href="#"
+                                <a href="#" id="anchor__clear"
                                    class="main__slider_item-wrap d-flex align-items-center justify-content-between">
                                     <div>
                                         <h3>Фильтры</h3>
@@ -429,11 +431,11 @@
                                 </a>
                             </div>
                             <div class="main__slider_item">
-                                <a href="#"
+                                <a href="#" id="anchor__rad"
                                    class="main__slider_item-wrap d-flex align-items-center justify-content-between">
                                     <div>
                                         <h3>Радиаторы</h3>
-                                        <p>
+                                        <p class="mb">
                                             Дополнительные
                                             радиаторы
                                         </p>
@@ -443,7 +445,7 @@
                                 </a>
                             </div>
                             <div class="main__slider_item">
-                                <a href="#"
+                                <a href="#" id="anchor__oil"
                                    class="main__slider_item-wrap d-flex align-items-center justify-content-between">
                                     <div>
                                         <h3>Масла</h3>
@@ -475,7 +477,7 @@
                                    class="main__slider_item-wrap d-flex align-items-center justify-content-between">
                                     <div>
                                         <h3>Радиаторы</h3>
-                                        <p>
+                                        <p class="mb">
                                             Дополнительные
                                             радиаторы
                                         </p>
@@ -488,17 +490,43 @@
                     </div>
                 </div>
             </div>
-            <div class="main__product_block">
+            <nav class="main__sm_menu d-xl-none d-md-none d-flex justify-content-between">
+                <a href="#" class="d-flex flex-column align-items-center justify-content-center">
+                    <img class="pb-2" src="images/home.png" alt="Home">
+                    <p>
+                        Главная
+                    </p>
+                </a>
+                <a href="#" class="d-flex flex-column align-items-center justify-content-center">
+                    <img class="pb-1" src="images/heart%201.png" alt="Favorite">
+                    <p>
+                        Избранное
+                    </p>
+                </a>
+                <a href="#" class="d-flex flex-column align-items-center justify-content-center">
+                    <img class="pb-1" src="images/shop_cart.svg" alt="Shop">
+                    <p>
+                        Корзина
+                    </p>
+                </a>
+                <a href="#" class="d-flex flex-column align-items-center justify-content-center">
+                    <img class="pb-1" src="images/user%20(1)%201.svg" alt="User">
+                    <p>
+                        Профиль
+                    </p>
+                </a>
+            </nav>
+            <div class="main__product_block container">
                 <div class="main__product ">
                     <nav class="main__product_caption">
                         <ul class="main__product_caption-list">
-                            <li class="main__product_caption-item main__product_caption-item1">
+                            <li class="main__product_caption-item main__product_caption-item1 d-flex align-items-center justify-content-center">
                                 <a href="#">Подборки товаров</a>
                             </li>
-                            <li class="main__product_caption-item main__product_caption-item2">
+                            <li class="main__product_caption-item main__product_caption-item2 d-flex align-items-center justify-content-center">
                                 <a href="#">Акции</a>
                             </li>
-                            <li class="main__product_caption-item main__product_caption-item3">
+                            <li class="main__product_caption-item main__product_caption-item3 d-flex align-items-center justify-content-center">
                                 <a href="#">Сейчас покупают</a>
                             </li>
                         </ul>
@@ -707,9 +735,246 @@
                     </div>
                 </div>
             </div>
+            <div class="main__news_block">
+                <h3 class="main__news_title container">
+                    <a href="#">НОВОСТИ</a>
+                </h3>
+                <div class="main__news_block-line d-xl-block d-md-block d-none"></div>
+                <ul class="main__news_list container ">
+                    <div class="row">
+                        <li class="main__news_item d-flex flex-column align-items-start col-xl-3 col-md-6 col-12">
+                            <img class="d-xl-block d-md-block d-none" src="images/news-deco.png" alt="">
+                            <div class="main__news_content-wrap">
+                                <p class="main__news_pubtime" id="news_pubtime-1">
+                                    3 ноября
+                                </p>
+                                <a class="text-decoration-underline" href="#">
+                                    Изменения на сайте
+                                </a>
+                                <p class="main__news_item-txt">
+                                    Недавно на сайте мы ввели
+                                    очередную порцию изменений,
+                                    которые, как нам кажется, должны
+                                    улучшить функциональность сайта
+                                    и сделать его более удобным для
+                                    пользователей. Реакция посетителей
+                                    не заставила себя долго ждать...
+                                </p>
+                            </div>
+                        </li>
+                        <li class="main__news_item d-flex flex-column align-items-start col-xl-3 col-12 col-md-6">
+                            <img class="d-xl-block d-md-block d-none" src="images/news-deco.png" alt="">
+                            <div class="main__news_content-wrap">
+                                <p class="main__news_pubtime" id="news_pubtime-2">
+                                    2 ноября
+                                </p>
+                                <a class="text-decoration-underline" href="#">
+                                    Вышла новая версия для
+                                    мобильных приложений
+                                </a>
+                                <p class="main__news_item-txt">
+                                    Что нового в 2.0:
+                                    — добавлена история поиска;
+                                    — добавлена синхронизация с сервером;
+                                    — испрвление ошибок.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="main__news_item d-flex flex-column align-items-start col-xl-3 col-12 col-md-6">
+                            <img class="d-xl-block d-md-block d-none" src="images/news-deco.png" alt="">
+                            <div class="main__news_content-wrap">
+                                <p class="main__news_pubtime" id="news_pubtime-3">
+                                    1 ноября
+                                </p>
+                                <a class="text-decoration-underline" href="#">
+                                    Очередная порция обновлений для
+                                    мобильных приложений
+                                </a>
+                                <p class="main__news_item-txt">
+                                    Что нового добавлено:
+                                    — поддержка пуш-уведомлений;
+                                    — разделы для покупателей;
+                                    — просмотр покупателя в заказах;
+                                    — возможность поиска;
+                                    — исправление ошибок.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="main__news_item d-flex flex-column align-items-start col-xl-3 col-12 col-md-6">
+                            <img class="d-xl-block d-md-block d-none" src="images/news-deco.png" alt="">
+                            <div class="main__news_content-wrap">
+                                <p class="main__news_pubtime" id="news_pubtime-4">
+                                    31 октября
+                                </p>
+                                <a class="text-decoration-underline" href="#">
+                                    Интерфейс заказов для покупателей
+                                    стал более функциональным
+                                </a>
+                                <p class="main__news_item-txt">
+                                    Он позволяет выводить все
+                                    формируемые системой
+                                    уведомления(e-mail, смс, web) в
+                                    едином окне с системой удобной
+                                    фильтрации поиска.
+                                </p>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
         </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer d-flex justify-content-center align-items-center">
+        <div class="footer__content container d-flex flex-column p-xl-0 ">
+            <div class="footer__main_block row flex-xl-row flex-column">
+                <div class="footer__info container col-xl-7 col-md-12">
+                    <nav class="footer__nav row">
+                        <div class="footer__nav_col d-flex flex-column col-xl-3 col-md-4 ">
+                            <h5>КАТАЛОГ</h5>
+                            <ul class="footer__nav-list d-flex flex-column p-0">
+                                <li class="footer__nav-item">
+                                    <a href="#dropdownMenuButton1"> Каталог запчастей </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#anchor__oil"> Масла </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#anchor__clear"> Фильтра </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#anchor__rad"> Радиаторы </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#"> Sonnax </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#"> Manual </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#"> Новинки </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#anchor__stock">Акции </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav_col d-flex flex-column col-xl-3 col-md-4 ">
+                            <h5>РУБРИКАТОР</h5>
+                            <ul class="footer__nav-list d-flex flex-column p-0">
+                                <li class="footer__nav-item">
+                                    <a href="#"> Доставка </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#"> Оплата </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#"> Гарантия </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#"> Новости</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#"> Журнал </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#"> О магазине </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#"> Контактная информация </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav_col d-flex flex-column col-xl-6 col-md-4 ">
+                            <h5>ИНФОРМАЦИЯ</h5>
+                            <ul class="footer__nav-list d-flex flex-column p-0">
+                                <li class="footer__nav-item">
+                                    <a href="#"> Пользовательское соглашение
+                                        об использовании персональных данных </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#"> Политика конфиденциальности </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#"> Соглашение на рассылку
+                                        рекламных материалов </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="#"> Политика возвратов </a>
+                                </li>
+                                <li class="footer__nav-item pt-4">
+                                    <div>
+                                        <p> Мы принимаем </p>
+                                        <img src="images/kisspng-mastercard-money-foothills-florist-business-visa-visa-mastercard-5b4d917e5dd4a1%201.png"
+                                             alt="Visa/Mastercard">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer__contact container d-flex flex-column col-xl-5 col-md-12">
+                    <nav class="footer__nav row">
+                        <div class="footer__nav_col d-flex flex-column col-xl-6 col-md-4 ">
+                            <h5>КОНТАКТЫ</h5>
+                            <ul class="footer__nav-list d-flex flex-column p-0">
+                                <li class="footer__nav-item">
+                                    <a href="#"> +7 383 291 92 86</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="mailto:info@avt-zap.ru"> info@avt-zap.ru</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav_col d-flex flex-column col-xl-6 col-md-4 ">
+                            <h5>АДРЕС</h5>
+                            <ul class="footer__nav-list d-flex flex-column p-0">
+                                <li class="footer__nav-item">
+                                    <p>
+                                        г. Новосибирск,
+                                        ул. Планировочная, 5, офис 105
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="footer__subscribe d-md-flex justify-content-md-between d-xl-block">
+                        <div class="footer__callback pb-4">
+                            <a href="#callback__form">
+                                <p class="d-flex flex-xl-row flex-column">Мы онлайн, воспользуйтесь
+                                    <span class="ms-0 pt-0 pt-xl-0 pt-md-4 ms-xl-2">Форма обратной связи</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="footer__subscribe_form ">
+                            <p class="pb-4">
+                                Подпишитесь на нашу расслыку и
+                                вы первыми узнаете о скидках и акциях
+                            </p>
+                            <form class="d-flex justify-content-md-end">
+                                <input type="text" placeholder="Введите ваш email">
+                                <button>Подписаться</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer__social d-flex justify-content-xl-end justify-content-md-end justify-content-start align-items-center mt-4">
+                        <a href="https://fontawesome.com/v5.15/icons/facebook-f?style=brands" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=telegram" target="_blank"><i
+                                class="fab fa-telegram-plane"></i></a>
+                        <a href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=twitter" target="_blank"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://fontawesome.com/v5.15/icons/google-plus-g?style=brands" target="_blank"><i
+                                class="fab fa-google-plus-g"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright_block">
+                <p>
+                    2017 © ООО «АВТ-ЗАП» - запчасти для акпп
+                </p>
+            </div>
+        </div>
+    </footer>
 </div>
 
 
