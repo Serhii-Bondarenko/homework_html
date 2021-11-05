@@ -1,14 +1,14 @@
 html, body {
   height: 100%;
 }
+body {
+  font-family: 'Roboto', sans-serif;
+}
 
 ::-webkit-scrollbar {
   width: 0;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
 
 ::-webkit-input-placeholder {
   text-align: center;
@@ -26,56 +26,6 @@ body {
   text-align: center;
 }
 
-// BS - style: none
-
-.dropdown-menu.show {
-  z-index: 1;
-}
-
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #ffffff;
-  text-decoration: none;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
-
-  &:hover, &:focus {
-    color: #D9D2D2FF;
-  }
-}
-
-.dropdown-toggle::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f107";
-  display: inline-block;
-  font-weight: 600;
-  margin-left: 0.255em;
-  padding-right: 3px;
-  vertical-align: middle;
-  border: none;
-}
-
-.header__top_row .navbar-toggler-icon {
-  position: relative;
-  background-image: url('../images/Chevron Right 1.svg');
-
-  &:before {
-    font-family: Roboto, sans-serif;
-    font-weight: 600;
-    color: #ffffff;
-    content: ' Еще ';
-    position: absolute;
-    font-size: 12px;
-    left: -400%;
-    top: -20%;
-  }
-}
-
-.navbar-toggler {
-  font-size: 6px;
-  border: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -84,18 +34,54 @@ p {
   margin: 0;
 }
 
+
+////    КОНТЕНТ
+
+///// HEADER
+
 .wrapper {
   min-height: 100%;
+
+  .btn-slick-slider {
+    background: #005BB9;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+
+  .btn-basket {
+    background: #005BB9;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+  }
+
+  .btn-input {
+    background: #005BB9;
+    border-radius: 0px 6px 6px 0px;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+
+  .btn-page {
+    background: #005BB9;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+
+  .m__f-color {
+    color: #0A1A2C;
+  }
+
 }
 
 header {
-  .header__content {
-  }
-
-  .header__main {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-  }
-
+  // ДРОП МЕНЮ
   .header__nav_dropdown {
     width: 320px;
     height: 320px;
@@ -134,11 +120,13 @@ header {
     }
   }
 
+  ////   ВЕРХНІЙ РЯД ШАПКИ
   .header__top {
     padding: 10px;
     background-color: #0F2438;
     position: fixed;
     z-index: 99;
+    top: 0;
 
     .header__top_container {
       .header__nav_content {
@@ -166,8 +154,18 @@ header {
     }
   }
 
+  //// ШАПКА : ЛОГО І ОСНОВА
   .header__main {
     padding-top: 50px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+
+    p, a, .nav-link {
+      color: #0F2438;
+    }
+  }
+
+  .header__main_form-btn {
+    display: flex;
   }
 
   .header__main_info {
@@ -175,10 +173,6 @@ header {
       font-weight: 500;
       font-size: 14px;
       line-height: 20px;
-      color: #0F2438;
-    }
-
-    .header__main_nav {
     }
 
     .header__nav_social a {
@@ -202,16 +196,12 @@ header {
         font-weight: 500;
         font-size: 20px;
         line-height: 23px;
-        color: #0F2438;
       }
 
       a span {
         font-size: 12px;
         line-height: 14px;
         text-decoration-line: underline;
-
-        color: #0F2438;
-
       }
     }
 
@@ -265,12 +255,8 @@ header {
 
       .header__callback_btn {
         font-style: normal;
-        font-weight: bold;
         font-size: 16px;
         line-height: 19px;
-        color: #FFFFFF;
-        background: #005BB9;
-        border-radius: 6px;
       }
     }
   }
@@ -279,25 +265,16 @@ header {
     .header__main_form {
       .header__main_form-catalog {
         .header__main_form_btn-sm {
-          display: flex;
           padding: 10px;
-          background: #005BB9;
-          border-radius: 6px;
-          font-weight: bold;
           font-size: 18px;
           line-height: 21px;
-          color: #FFFFFF;
           display: none;
         }
 
         .header__main_form-btn {
           padding: 16px 30px 16px 54px;
-          background: #005BB9;
-          border-radius: 6px;
-          font-weight: bold;
           font-size: 18px;
           line-height: 21px;
-          color: #FFFFFF;
           position: relative;
 
           &::before {
@@ -314,56 +291,51 @@ header {
           }
         }
       }
-
-      .header__main_form-search-sm {
-        display: flex;
-        display: none;
-
+      .header__main_form-search-sm, .header__main_form-search{
         input {
           background: #F4F5FA;
           border-radius: 6px 0px 0px 6px;
+
+          &::placeholder {
+            color: #C2C5DA;
+          }
+        }
+        button {
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+      .header__main_form-search-sm {
+        display: none;
+
+        input {
           padding: 10px 42px 10px 10px;
 
           &::placeholder {
             font-size: 12px;
             line-height: 14px;
-            color: #C2C5DA;
           }
         }
 
         button {
           padding: 10px;
-          background: #005BB9;
-          border-radius: 0px 6px 6px 0px;
-          font-size: 14px;
-          line-height: 17px;
-          color: #FFFFFF;
         }
-
       }
 
       .header__main_form-search {
         display: flex;
 
         input {
-          background: #F4F5FA;
-          border-radius: 6px 0px 0px 6px;
           padding: 17px 200px 17px 17px;
 
           &::placeholder {
             font-size: 14px;
             line-height: 16px;
-            color: #C2C5DA;
           }
         }
 
         button {
           padding: 18px 30px;
-          background: #005BB9;
-          border-radius: 0px 6px 6px 0px;
-          font-size: 14px;
-          line-height: 17px;
-          color: #FFFFFF;
         }
       }
 
@@ -412,76 +384,77 @@ header {
   }
 }
 
-.carousel-control-next, .carousel-control-prev {
-  position: absolute;
-  top: unset;
-  bottom: unset;
+// BS - style HEADER : none
+
+.dropdown-menu.show {
   z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  padding: 10px;
-  color: #fff;
-  text-align: center;
-  background: unset;
-  border: unset;
-  opacity: unset;
-  transition: unset;
-  background-color: #FFFFFF;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 50%;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  position: relative;
-  top: 25%;
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+
+  &:hover, &:focus {
+    color: #D9D2D2FF;
+  }
 }
 
-.carousel-control-prev-icon {
-  left: 25%;
-  background: url("../images/Chevron Right 1.png") no-repeat;
-}
-
-.carousel-control-next-icon {
-  left: 25%;
-  background: url("../images/Chevron Right 1 (1).png") no-repeat;
-}
-
-.carousel-indicators [data-bs-target] {
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  background-clip: unset;
+.dropdown-toggle::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  display: inline-block;
+  font-weight: 600;
+  margin-left: 0.255em;
+  padding-right: 3px;
+  vertical-align: middle;
   border: none;
-  margin-left: 22px;
-  opacity: unset;
 }
 
-.carousel-indicators .active {
-  background: #0D1C2B;
+.header__top_row .navbar-toggler-icon {
+  position: relative;
+  background-image: url('../images/Chevron Right 1.svg');
+
+  &:before {
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    content: ' Еще ';
+    position: absolute;
+    font-size: 12px;
+    left: -400%;
+    top: -20%;
+  }
 }
+
+.navbar-toggler {
+  font-size: 6px;
+  border: none;
+}
+
+/// MAIN //////
 
 main {
   flex: 1 1 auto;
   padding-top: 30px;
-
+  /// ОСНОВНИЙ СЛАЙДЕР ТА АКЦІЇ
   .main__slider_top {
+    // Стрічка слайдера
     .main__carousel {
       background: url("../images/Mask Group.png") center/cover no-repeat;
       border-radius: 20px;
       padding: 50px;
       min-width: 0;
     }
-
+  /// СТИЛІ СЛАЙДІВ ТА ЇХ ЕЛЕМЕНТІВ
     .main__carousel_list {
       .main__carousel_item {
         h3 {
           font-weight: 500;
           font-size: 35px;
           line-height: 42px;
-          color: #0A1A2C;
         }
 
         div a {
@@ -514,11 +487,8 @@ main {
         }
 
         button {
-          background: #005BB9;
-          border-radius: 6px;
           font-size: 16px;
           line-height: 19px;
-          color: #FFFFFF;
           width: 160px;
           height: 49px;
           column-gap: 8px;
@@ -526,9 +496,10 @@ main {
       }
     }
 
+    /// АКЦІЇ
     .main__stock_list {
       row-gap: 10px;
-
+    // БЛОК З АКЦІЙНИМ ТОВАРОМ
       .main__stock_item {
         background: #F4F5FA;
         border-radius: 10px;
@@ -538,7 +509,6 @@ main {
           font-weight: 500;
           font-size: 14px;
           line-height: 16px;
-
           color: #0F2438;
         }
 
@@ -577,8 +547,6 @@ main {
           }
 
           button {
-            background: #005BB9;
-            border-radius: 6px;
             padding: 20px;
           }
         }
@@ -586,6 +554,7 @@ main {
     }
   }
 
+  /// СЛАЙДЕР СЛІК СТИЛІ
   .main__slider_bottom {
     padding-left: 0;
     padding-right: 0;
@@ -619,7 +588,7 @@ main {
     }
 
   }
-
+/// СЛАЙДЕР СЛІК КАСТОМНА СТИЛІЗАЦІЯ
   .main__slider {
     position: relative;
 
@@ -653,9 +622,6 @@ main {
             line-height: 16px;
             display: flex;
             align-items: center;
-            color: #FFFFFF;
-            background: #005BB9;
-            border-radius: 4px;
             padding: 5px 10px;
           }
         }
@@ -663,10 +629,11 @@ main {
     }
   }
 
+  //// КАРТКИ ТОВАРУ ВІТРИНА
   .main__product_block {
     padding-top: 70px;
   }
-
+/// КНОПКИ НАВІГАЦІЇ ПО ТОВАРУ
   .main__product_caption {
     .main__product_caption-list {
       padding: 0;
@@ -675,6 +642,7 @@ main {
       column-gap: 20px;
 
       .main__product_caption-item {
+        box-sizing: border-box;
         border: 2px solid #005BB9;
         box-sizing: border-box;
         border-radius: 6px;
@@ -712,6 +680,7 @@ main {
     }
   }
 
+  /// МЕНЮ STICKY ДЛЯ СМАРТФОНУ
   .main__sm_menu {
     margin: 20px 0;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
@@ -724,14 +693,12 @@ main {
     }
   }
 
+
   hr:not([size]) {
     height: 2px;
   }
 
-  .main__product_list {
-
-  }
-
+  /// КАРТКИ ТОВАРІВ
   .main__product_cards {
     .main__product_cards-btn {
       margin-top: 40px;
@@ -755,21 +722,28 @@ main {
       }
     }
   }
-
+  //// Межа між блоками карток 375 - 768
   .main__product_item_divide-sm {
     display: none;
   }
-
+  //// Межа між блоками карток
   .main__product_item-divide {
     background-color: #E1E5F8;
     margin: 30px 0 20px 0;
+  }
+/// СТИЛІ КАРТОК З ТОВАРОМ ТА ЇХ ЕЛЕМЕНТАМИ
+  .main__product_list{
+    justify-content: space-between;
   }
 
   .main__product_item {
     padding-top: 10px;
     flex: 1 1 20%;
     position: relative;
-
+    max-width: 280px;
+    h3{
+      white-space: nowrap;
+    }
     .main__product_item-discount {
       position: absolute;
       max-width: 40px;
@@ -829,21 +803,19 @@ main {
     .main__product_item-active {
       column-gap: 20px;
 
-      button {
+      button:nth-child(2), button:nth-child(3) {
         background: transparent;
       }
 
       button:first-child {
         font-size: 16px;
         line-height: 19px;
-        color: #FFFFFF;
         padding: 15px 30px;
-        background: #005BB9;
-        border-radius: 6px;
       }
     }
   }
 
+  //// БЛОК НОВИН
   .main__news_block {
     .main__news_title a {
       font-weight: 500;
@@ -851,14 +823,18 @@ main {
       line-height: 28px;
       color: #000000;
     }
-
+/// ЛІНІЯ ПІД ЗАГОЛОВКОМ НОВИНИ
     .main__news_block-line {
       height: 9px;
       background-color: #F5F5F5;
     }
-
+/// СПИСОК З БЛОКАМИ
     .main__news_list {
       margin-top: -10px;
+    }
+
+    .main__news_list.container ul {
+      padding: 0;
     }
 
     .main__news_content-wrap {
@@ -897,16 +873,69 @@ main {
   }
 }
 
+////// BS-STYLE CAROUSEL : NONE
+
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: unset;
+  bottom: unset;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border: unset;
+  opacity: unset;
+  transition: unset;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  position: relative;
+  top: 25%;
+}
+
+.carousel-control-prev-icon {
+  left: 25%;
+  background: url("../images/Chevron Right 1.png") no-repeat;
+}
+
+.carousel-control-next-icon {
+  left: 25%;
+  background: url("../images/Chevron Right 1 (1).png") no-repeat;
+}
+
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-clip: unset;
+  border: none;
+  margin-left: 22px;
+  opacity: unset;
+}
+
+.carousel-indicators .active {
+  background: #0D1C2B;
+}
+
+////  ПІДВАЛ САЙТУ
+
 .footer {
   margin-top: 100px;
+  padding: 35px 0 10px 0;
+  background: #0C1A2A;
 
   .footer__content {
     row-gap: 40px;
   }
-
-  background: #0C1A2A;
-  padding: 35px 0 10px 0;
-
+/// НАВІГАЦІЙНІ БЛОКИ
   h5 {
     font-weight: 500;
     font-size: 18px;
@@ -929,7 +958,7 @@ main {
   .footer__contact .footer__nav-list {
     row-gap: 0;
   }
-
+/// ФОРМА ПІДПИСКИ
   .footer__subscribe {
     p {
       font-size: 18px;
@@ -960,16 +989,13 @@ main {
 
     button {
       margin-left: -10px;
-      background: #005BB9;
-      border-radius: 0px 6px 6px 0px;
       font-size: 16px;
       line-height: 19px;
       text-align: center;
-      color: #FFFFFF;
       padding: 10px 30px;
     }
   }
-
+//// ПОСИЛАННЯ НА СОЦ МЕРЕЖІ
   .footer__social {
     column-gap: 50px;
 
@@ -978,7 +1004,7 @@ main {
       color: #FFFFFF;
     }
   }
-
+/// КОПІРАЙТ
   .footer__copyright_block p {
     font-size: 16px;
     line-height: 20px;
